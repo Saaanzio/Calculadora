@@ -54,6 +54,7 @@ public class Memoria {
     }
 
     private String obterResultadoOperacao() {
+        //FIXME Atualmente é possível colocar uma virgula sem um número, e tentar realizar 2 operações com o mesmo número.
         if(ultimaOperacao == null || ultimaOperacao == TipoComando.IGUAL){
             return textoAtual;
         }
